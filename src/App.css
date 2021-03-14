@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+
+body {
+  background-image: url(https://images.wallpaperscraft.ru/image/kub_temnyj_tekstura_formy_119956_1920x1080.jpg);
+}
+
+::-webkit-scrollbar{
+  width: 0;
+}
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 900px;
+  min-height: 600px;
+  background: #DADFE8;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  
+}
+
+h1 {
+  margin: 32px 0;
+  color: #838B9C;
+  font-size: 24px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #838B9C;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #838B9C;
+}
+
+.todo-input::placeholder {
+  color: #838B9C;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background-color: #838B9C;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.todo-input.edit {
+  border: 2px solid #838B9C;
+}
+
+.todo-button.edit {
+  background-color: #838B9C;
+  padding: 16px 22px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background-color:#838B9C;
+
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.text-wrapping {
+  text-align: left;
+  width: 700px;
+  word-break: break-all;
+}
+
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.edit-icon {
+  color: #fff;
+}
